@@ -1,5 +1,6 @@
 import os
 import streamlit as st
+from dotenv import load_dotenv
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
@@ -9,12 +10,15 @@ from langchain.chains import RetrievalQA
 from typing import List
 
 # ------------------ CONFIG ------------------
-os.environ["GROQ_API_KEY"] = ""  # Replace with your key
+load_dotenv()  # Load from .env file
+os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
+
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 LLM_MODEL = "llama3-8b-8192"
 CHUNK_SIZE = 1200
 CHUNK_OVERLAP = 250
 CHROMA_DB_DIR = "chroma_db"
+
 
 # ------------------ LOAD DOCUMENTS ------------------
 def load_pdfs(uploaded_files):
