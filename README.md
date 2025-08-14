@@ -1,6 +1,6 @@
 # Gen-AI-RAG Based ChatBot-WEEK 1 Assessment
 
-📚 StudyMate AI – Learning Assistant
+## 📚 StudyMate AI – Learning Assistant
 
 An **AI-powered study companion** built with **Streamlit**, **LangChain**, **Groq LLM**, and **ChromaDB**.  
 Upload your study materials (PDFs), ask questions, and get **context-aware, multi-page answers** with source references.
@@ -10,7 +10,7 @@ Upload your study materials (PDFs), ask questions, and get **context-aware, mult
 
 ---
 
-🚀 Features
+## 🚀 Features
 - **PDF Upload & Processing** – Upload multiple PDFs and split them into searchable chunks.
 - **ChromaDB Vector Store** – Persistent storage of embeddings for fast retrieval.
 - **Groq LLM Integration** – Powered by **LLaMA3-8B-8192** for fast and accurate answers.
