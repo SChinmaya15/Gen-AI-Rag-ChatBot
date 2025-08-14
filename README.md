@@ -1,4 +1,4 @@
-# Gen-AI
+# Gen-AI-RAG Based ChatBot-WEEK 1 Assessment
 
 📚 StudyMate AI – Learning Assistant
 
