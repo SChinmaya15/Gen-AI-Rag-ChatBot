@@ -1,0 +1,6 @@
+aiohttp
+requests
+Flask
+python-dotenv
+botbuilder-core
+botbuilder-schema
